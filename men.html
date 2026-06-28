@@ -1,21 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Men's Collection</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UrbanWear | Men's Collection</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-<div class="container mt-5">
+<!-- Navigation -->
 
-    <h1>Men's Collection</h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <p>
-        Explore our premium men's fashion collection including
-        hoodies, jackets, jeans, and accessories.
-    </p>
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="index.html">
+UrbanWear
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="shop.html">Shop</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="products.html">Products</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="men.html">Men</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="women.html">Women</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="gallery.html">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="blog.html">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="faq.html">FAQ</a>
+</li>
+
+</ul>
 
 </div>
 
+</div>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="bg-dark text-white text-center py-5">
+
+<div class="container">
+
+<h1 class="display-4">Men's Collection</h1>
+
+<p class="lead">
+Modern streetwear designed for confidence and comfort.
+</p>
+
+</div>
+
+</section>
+
+<section class="container py-5">
+
+<div class="row g-4">
+    <!-- Hoodie -->
+
+<div class="col-md-3">
+
+<div class="card h-100 shadow">
+
+<img src="images/hoodie-men.jpg"
+class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>Urban Hoodie</h5>
+
+<p class="fw-bold">KES 3,500</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Urban Hoodie',3500)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Jacket -->
+
+<div class="col-md-3">
+
+<div class="card h-100 shadow">
+
+<img src="images/jacket-men.jpg"
+class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>Denim Jacket</h5>
+
+<p class="fw-bold">KES 4,800</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Denim Jacket',4800)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Jeans -->
+
+<div class="col-md-3">
+
+<div class="card h-100 shadow">
+
+<img src="images/jeans-men.jpg"
+class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>Slim Jeans</h5>
+
+<p class="fw-bold">KES 3,200</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Slim Jeans',3200)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- T-Shirt -->
+
+<div class="col-md-3">
+
+<div class="card h-100 shadow">
+
+<img src="images/tshirt-men.jpg"
+class="card-img-top">
+
+<div class="card-body text-center">
+
+<h5>Graphic Tee</h5>
+
+<p class="fw-bold">KES 2,000</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Graphic Tee',2000)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<footer class="bg-dark text-white text-center p-4">
+
+<h4>UrbanWear</h4>
+
+<p>
+Premium Streetwear & Modern Fashion
+</p>
+
+<p>
+© 2026 UrbanWear Clothing
+</p>
+
+</footer>
+
+<script>
+
+function buyItem(product,price){
+
+let size=prompt("Choose Size (S,M,L,XL)");
+
+if(size==null || size=="") return;
+
+let quantity=prompt("Quantity");
+
+if(quantity==null || quantity=="") return;
+
+alert(
+
+"PURCHASE CONFIRMATION\n\n"+
+
+"Product: "+product+
+
+"\nPrice: KES "+price+
+
+"\nSize: "+size+
+
+"\nQuantity: "+quantity+
+
+"\n\nThank you for shopping with UrbanWear!"
+
+);
+
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

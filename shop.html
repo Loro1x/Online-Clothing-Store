@@ -1,38 +1,419 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Shop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>UrbanWear Shop</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="css/style.css">
+
 </head>
+
 <body>
 
-<div class="container mt-5">
-    <h1>Shop</h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <div class="row">
+<div class="container">
 
-        <div class="col-md-4">
-            <div class="card">
-                <img src="images/hoodie.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5>Black Hoodie</h5>
-                    <p>KES 3,500</p>
-                </div>
-            </div>
-        </div>
+<a class="navbar-brand fw-bold"
+href="index.html">
 
-        <div class="col-md-4">
-            <div class="card">
-                <img src="images/jacket.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5>Denim Jacket</h5>
-                    <p>KES 4,500</p>
-                </div>
-            </div>
-        </div>
+UrbanWear
 
-    </div>
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link"
+href="index.html">
+Home
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="about.html">
+About
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active"
+href="shop.html">
+Shop
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="products.html">
+Products
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="men.html">
+Men
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="women.html">
+Women
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="gallery.html">
+Gallery
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="blog.html">
+Blog
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="contact.html">
+Contact
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="faq.html">
+FAQ
+</a>
+</li>
+
+</ul>
+
 </div>
 
-</body>
-</html>
+</div>
+
+</nav>
+
+<section class="bg-dark text-white text-center py-5">
+
+<div class="container">
+
+<h1 class="display-4">
+
+UrbanWear Shop
+
+</h1>
+
+<p class="lead">
+
+Browse our complete fashion collection.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="container py-5">
+
+<div class="row g-4">
+    <!-- Urban Hoodie -->
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<img src="images/hoodie-men.jpg"
+class="card-img-top"
+alt="Urban Hoodie">
+
+<div class="card-body text-center">
+
+<h5>Urban Hoodie</h5>
+
+<p class="fw-bold">KES 3,500</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Urban Hoodie',3500)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Denim Jacket -->
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<img src="images/jacket-men.jpg"
+class="card-img-top"
+alt="Denim Jacket">
+
+<div class="card-body text-center">
+
+<h5>Denim Jacket</h5>
+
+<p class="fw-bold">KES 4,800</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Denim Jacket',4800)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Slim Jeans -->
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<img src="images/jeans-men.jpg"
+class="card-img-top"
+alt="Slim Jeans">
+
+<div class="card-body text-center">
+
+<h5>Slim Jeans</h5>
+
+<p class="fw-bold">KES 3,200</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Slim Jeans',3200)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Graphic Tee -->
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<img src="images/tshirt-men.jpg"
+class="card-img-top"
+alt="Graphic Tee">
+
+<div class="card-body text-center">
+
+<h5>Graphic Tee</h5>
+
+<p class="fw-bold">KES 2,000</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Graphic Tee',2000)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Snapback Cap -->
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<img src="images/cap.jpg"
+class="card-img-top"
+alt="Snapback Cap">
+
+<div class="card-body text-center">
+
+<h5>Snapback Cap</h5>
+
+<p class="fw-bold">KES 1,500</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Snapback Cap',1500)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Cargo Pants -->
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<img src="images/cargo-men.jpg"
+class="card-img-top"
+alt="Cargo Pants">
+
+<div class="card-body text-center">
+
+<h5>Cargo Pants</h5>
+
+<p class="fw-bold">KES 3,800</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Cargo Pants',3800)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+<!-- Elegant Dress -->
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<img src="images/dress-women.jpg"
+class="card-img-top"
+alt="Elegant Dress">
+
+<div class="card-body text-center">
+
+<h5>Elegant Dress</h5>
+
+<p class="fw-bold">KES 4,500</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Elegant Dress',4500)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Fashion Top -->
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<img src="images/top-women.jpg"
+class="card-img-top"
+alt="Fashion Top">
+
+<div class="card-body text-center">
+
+<h5>Fashion Top</h5>
+
+<p class="fw-bold">KES 2,500</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Fashion Top',2500)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Women's Jacket -->
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<img src="images/jacket-women.jpg"
+class="card-img-top"
+alt="Women's Jacket">
+
+<div class="card-body text-center">
+
+<h5>Women's Jacket</h5>
+
+<p class="fw-bold">KES 4,900</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Women Jacket',4900)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Women's Hoodie -->
+
+<div class="col-md-4">
+
+<div class="card h-100 shadow">
+
+<img src="images/hoodie-women.jpg"
+class="card-img-top"
+alt="Women's Hoodie">
+
+<div class="card-body text-center">
+
+<h5>Women's Hoodie</h5>
+
+<p class="fw-bold">KES 3,700</p>
+
+<button class="btn btn-dark"
+onclick="buyItem('Women Hoodie',3700)">
+View Item
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
